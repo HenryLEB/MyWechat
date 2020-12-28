@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg4"
+    tools:context=".ui.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="帐号"
+            android:gravity="right"
+            android:textSize="30dp" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_register_userName"
+            android:hint="请输入帐号"
+            android:layout_marginLeft="15dp"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:gravity="right"
+            android:textSize="30dp" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_register_userPassword"
+            android:hint="请输入登录密码"
+            android:inputType="textPassword"
+            android:layout_marginLeft="15dp"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="确认密码"
+            android:textSize="30dp" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_register_confirmPassword"
+            android:inputType="textPassword"
+            android:hint="请再次输入登录密码"
+            android:layout_marginLeft="15dp"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="性别"
+            android:textSize="30dp"/>
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/RG_register_sex"
+            >
+            
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:checked="true"
+                android:id="@+id/RGbtn_register_male"
+                android:layout_marginLeft="15dp"
+                android:textSize="30dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:id="@+id/RGbtn_register_frmale"
+                android:textSize="30dp"/>
+            
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="出生年月"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="邮箱"
+            android:textSize="30dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_register_email"
+            android:hint="请输入邮箱"
+            android:layout_marginLeft="15dp"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="所在城市"
+            android:textSize="30dp"/>
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/Spinner_register_city"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:layout_width="125dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="学校名称"
+            android:textSize="30dp"/>
+        <AutoCompleteTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/autoText_register_college"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_register_register"
+            android:text="注册"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_register_clear"
+            android:text="清空"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="版权所有：广东东软学院
+        \n     联系邮箱:5195689@qq.com
+        \n联系电话：18988888888
+        \n 网址：https://www.nuit.edu.cn"
+            android:autoLink="phone|web|email"
+            android:gravity="center"
+            android:drawableStart="@drawable/logob"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

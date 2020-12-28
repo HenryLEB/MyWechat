@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyWeChat</string>
+    <string name="TEST">测试</string>
+    <string name="searchPlaceEdit">请输入城市</string>
+</resources>

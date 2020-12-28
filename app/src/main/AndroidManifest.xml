@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.secondexperiment">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_primary"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SecondExperiment">
+        <activity android:name="com.example.mywechat.sunnyweather.ui.MainWeatherActivity"></activity>
+        <activity android:name="com.example.mywechat.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.DrawerLayout" />
+        <activity android:name=".ui.HttpRequestActivity" />
+
+        <service
+            android:name=".service.FrontService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ui.FunctionActivity" />
+
+        <provider
+            android:name=".provider.DatabaseProvider"
+            android:authorities="com.example.secondexperiment.provider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ui.ChatActivity" />
+        <activity android:name=".ui.BaseActivity" />
+        <activity android:name=".ui.RegisterInfoActivity" />
+        <activity
+            android:name=".ui.FriendList"
+            android:label="FriendList" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.LoginActivity"></activity>
+    </application>
+
+</manifest>

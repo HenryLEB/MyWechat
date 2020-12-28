@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbar_come_message"
+        android:title="来消息"
+        android:icon="@mipmap/icon_come_msg"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/toolbar_function"
+        android:title="功能"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/toolbar_offline"
+        android:title="强制下线"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/toolbar_func_weather"
+        android:title="其他"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item_drawerLayout"
+        android:title="侧滑菜单"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item_addFriend"
+        android:title="添加好友"
+        app:showAsAction="never"/>
+
+
+</menu>
