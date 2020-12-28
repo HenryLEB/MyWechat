@@ -3,6 +3,7 @@
     package="com.example.secondexperiment">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SecondExperiment">
-        <activity android:name="com.example.mywechat.sunnyweather.ui.MainWeatherActivity"></activity>
+        <activity android:name="com.sunnyweather.android.ui.weather.WeatherActivity"
+            android:theme="@style/BackgroundTheme"></activity>
+        <activity android:name="com.example.mywechat.sunnyweather.MainWeatherActivity" />
         <activity android:name="com.example.mywechat.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,7 +45,7 @@
             android:name=".ui.FriendList"
             android:label="FriendList" />
         <activity android:name=".ui.RegisterActivity" />
-        <activity android:name=".ui.LoginActivity"></activity>
+        <activity android:name=".ui.LoginActivity" />
     </application>
 
 </manifest>

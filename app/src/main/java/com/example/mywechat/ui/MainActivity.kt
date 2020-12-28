@@ -24,6 +24,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
+import com.example.mywechat.sunnyweather.MainWeatherActivity
 import com.example.secondexperiment.R
 import com.example.secondexperiment.model.MSGDataBaseHelper
 import com.example.secondexperiment.ui.BaseActivity
@@ -225,9 +226,9 @@ class MainActivity : BaseActivity() {
                 com.example.secondexperiment.utils.startActivity<DrawerLayout>(this)
             }
 
-//            R.id.toolbar_func_weather -> {
-//                com.example.secondexperiment.utils.startActivity<MainWeatherActivity>(this)
-//            }
+            R.id.toolbar_func_weather -> {
+                com.example.secondexperiment.utils.startActivity<MainWeatherActivity>(this)
+            }
         }
 //        return true
         return super.onOptionsItemSelected(item)

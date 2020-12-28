@@ -20,7 +20,7 @@
 
     <item
         android:id="@+id/toolbar_func_weather"
-        android:title="其他"
+        android:title="天气信息"
         app:showAsAction="never"/>
 
     <item

@@ -14,4 +14,10 @@
         <item name="android:windowBackground">@drawable/bg4</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- 背景图与状态栏融合主题. -->
+    <style name="BackgroundTheme" parent="Theme.SecondExperiment">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
 </resources>
